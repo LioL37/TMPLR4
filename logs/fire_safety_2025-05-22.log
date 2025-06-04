@@ -1,0 +1,74 @@
+2025-05-22 18:36:39,288 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-22 18:36:39,289 - fire_safety - ERROR - Request failed: 'coroutine' object has no attribute 'status_code'
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 254, in log_requests
+    logger.info(f"Response: {response.status_code}")
+AttributeError: 'coroutine' object has no attribute 'status_code'
+2025-05-22 18:36:39,296 - fire_safety - ERROR - Unhandled exception: 'coroutine' object has no attribute 'status_code'
+NoneType: None
+2025-05-22 18:36:39,716 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-05-22 18:36:39,716 - fire_safety - ERROR - Request failed: 'coroutine' object has no attribute 'status_code'
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 254, in log_requests
+    logger.info(f"Response: {response.status_code}")
+AttributeError: 'coroutine' object has no attribute 'status_code'
+2025-05-22 18:36:39,718 - fire_safety - ERROR - Unhandled exception: 'coroutine' object has no attribute 'status_code'
+NoneType: None
+2025-05-22 18:36:42,474 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-22 18:36:42,475 - fire_safety - ERROR - Request failed: 'coroutine' object has no attribute 'status_code'
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 254, in log_requests
+    logger.info(f"Response: {response.status_code}")
+AttributeError: 'coroutine' object has no attribute 'status_code'
+2025-05-22 18:36:42,478 - fire_safety - ERROR - Unhandled exception: 'coroutine' object has no attribute 'status_code'
+NoneType: None
+2025-05-22 18:36:42,535 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-05-22 18:36:42,535 - fire_safety - ERROR - Request failed: 'coroutine' object has no attribute 'status_code'
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 254, in log_requests
+    logger.info(f"Response: {response.status_code}")
+AttributeError: 'coroutine' object has no attribute 'status_code'
+2025-05-22 18:36:42,538 - fire_safety - ERROR - Unhandled exception: 'coroutine' object has no attribute 'status_code'
+NoneType: None
+2025-05-22 18:36:43,619 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-22 18:36:43,620 - fire_safety - ERROR - Request failed: 'coroutine' object has no attribute 'status_code'
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 254, in log_requests
+    logger.info(f"Response: {response.status_code}")
+AttributeError: 'coroutine' object has no attribute 'status_code'
+2025-05-22 18:36:43,622 - fire_safety - ERROR - Unhandled exception: 'coroutine' object has no attribute 'status_code'
+NoneType: None
+2025-05-22 18:36:43,664 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-05-22 18:36:43,665 - fire_safety - ERROR - Request failed: 'coroutine' object has no attribute 'status_code'
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 254, in log_requests
+    logger.info(f"Response: {response.status_code}")
+AttributeError: 'coroutine' object has no attribute 'status_code'
+2025-05-22 18:36:43,667 - fire_safety - ERROR - Unhandled exception: 'coroutine' object has no attribute 'status_code'
+NoneType: None
+2025-05-22 18:45:09,881 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-22 18:45:09,881 - fire_safety - ERROR - Request failed: 'coroutine' object has no attribute 'status_code'
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 254, in log_requests
+    logger.info(f"Response: {response.status_code}")
+AttributeError: 'coroutine' object has no attribute 'status_code'
+2025-05-22 18:45:09,888 - fire_safety - ERROR - Unhandled exception: 'coroutine' object has no attribute 'status_code'
+NoneType: None
+2025-05-22 18:45:09,934 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-05-22 18:45:09,935 - fire_safety - ERROR - Request failed: 'coroutine' object has no attribute 'status_code'
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 254, in log_requests
+    logger.info(f"Response: {response.status_code}")
+AttributeError: 'coroutine' object has no attribute 'status_code'
+2025-05-22 18:45:09,937 - fire_safety - ERROR - Unhandled exception: 'coroutine' object has no attribute 'status_code'
+NoneType: None
+2025-05-22 18:47:29,840 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-22 18:47:29,841 - fire_safety - INFO - Response: 200
+2025-05-22 18:47:30,636 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-05-22 18:47:30,670 - fire_safety - INFO - Response: 200
+2025-05-22 19:29:03,423 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/users/?skip=0&limit=100
+2025-05-22 19:29:03,754 - fire_safety - INFO - Response: 200
+2025-05-22 19:29:36,238 - fire_safety - INFO - Request: POST http://127.0.0.1:8000/users/
+2025-05-22 19:29:36,793 - fire_safety - INFO - Response: 201
+2025-05-22 19:29:47,851 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/users/?skip=0&limit=100
+2025-05-22 19:29:47,859 - fire_safety - INFO - Response: 200

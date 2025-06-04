@@ -1,0 +1,44 @@
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: poma
+      POSTGRES_DB: lr4
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - mynet
+
+  backend:
+    build: .
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    volumes:
+      - .:/app
+    environment:
+      DATABASE_URL: postgresql://postgres:poma@db/lr4
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    networks:
+      - mynet
+
+  frontend:
+    build: ./lr4front
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    depends_on:
+      - backend
+    networks:
+      - mynet
+
+networks:
+  mynet:
+
+volumes:
+  postgres_data:

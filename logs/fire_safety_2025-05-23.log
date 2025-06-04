@@ -1,0 +1,154 @@
+2025-05-23 19:44:03,817 - fire_safety - INFO - Request: GET http://localhost:8000/docs
+2025-05-23 19:44:03,827 - fire_safety - INFO - Response: 200
+2025-05-23 19:44:06,160 - fire_safety - INFO - Request: GET http://localhost:8000/openapi.json
+2025-05-23 19:44:06,206 - fire_safety - INFO - Response: 200
+2025-05-23 19:44:16,053 - fire_safety - INFO - Request: GET http://localhost:8000/users/?skip=0&limit=100
+2025-05-23 19:44:16,407 - fire_safety - INFO - Response: 200
+2025-05-23 19:44:45,890 - fire_safety - INFO - Request: POST http://localhost:8000/users/
+2025-05-23 19:44:46,500 - fire_safety - INFO - Response: 201
+2025-05-23 19:45:09,123 - fire_safety - INFO - Request: GET http://localhost:8000/users/?skip=0&limit=100
+2025-05-23 19:45:09,156 - fire_safety - INFO - Response: 200
+2025-05-23 19:45:31,059 - fire_safety - INFO - Request: GET http://localhost:8000/users/5
+2025-05-23 19:45:31,067 - fire_safety - INFO - Response: 200
+2025-05-23 19:45:47,185 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-23 19:45:47,186 - fire_safety - INFO - Response: 200
+2025-05-23 19:45:47,187 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-23 19:45:47,192 - fire_safety - INFO - Response: 422
+2025-05-23 19:45:48,688 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-23 19:45:48,695 - fire_safety - INFO - Response: 422
+2025-05-23 19:45:56,440 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-23 19:45:56,444 - fire_safety - INFO - Response: 422
+2025-05-23 19:45:59,089 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-23 19:45:59,093 - fire_safety - INFO - Response: 422
+2025-05-23 19:48:04,838 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-23 19:48:04,846 - fire_safety - ERROR - HTTPException: 401 - Incorrect email or password
+2025-05-23 19:48:04,848 - fire_safety - INFO - Response: 401
+2025-05-23 19:52:24,089 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-23 19:52:24,099 - fire_safety - INFO - Response: 422
+2025-05-23 19:56:32,630 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-23 19:56:32,632 - fire_safety - INFO - Response: 200
+2025-05-23 19:56:32,633 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-23 19:56:32,635 - fire_safety - INFO - Response: 422
+2025-05-23 19:56:42,036 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-23 19:56:42,045 - fire_safety - INFO - Response: 422
+2025-05-23 19:56:53,980 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-23 19:56:54,021 - fire_safety - ERROR - HTTPException: 401 - Incorrect email or password
+2025-05-23 19:56:54,022 - fire_safety - INFO - Response: 401
+2025-05-23 19:57:04,698 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-23 19:57:04,705 - fire_safety - ERROR - Request failed: module 'auth' has no attribute 'pwd_context'
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 253, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 182, in login_for_access_token
+    if not user or not auth.pwd_context.verify(form_data.password, user.password_hash):
+AttributeError: module 'auth' has no attribute 'pwd_context'
+2025-05-23 19:57:04,745 - fire_safety - ERROR - Unhandled exception: module 'auth' has no attribute 'pwd_context'
+NoneType: None
+2025-05-23 19:57:41,578 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-23 19:57:41,616 - fire_safety - ERROR - Request failed: module 'auth' has no attribute 'pwd_context'
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 253, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 182, in login_for_access_token
+    if not user or not auth.pwd_context.verify(form_data.password, user.password_hash):
+AttributeError: module 'auth' has no attribute 'pwd_context'
+2025-05-23 19:57:41,624 - fire_safety - ERROR - Unhandled exception: module 'auth' has no attribute 'pwd_context'
+NoneType: None

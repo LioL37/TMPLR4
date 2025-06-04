@@ -1,0 +1,180 @@
+2025-06-04 16:59:34,068 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 16:59:34,554 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:34,910 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 16:59:35,244 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:35,248 - fire_safety - INFO - Request: POST http://testserver/token
+2025-06-04 16:59:35,545 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:35,657 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 16:59:35,953 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:35,959 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 16:59:35,981 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:36,094 - fire_safety - INFO - Request: GET http://testserver/buildings/
+2025-06-04 16:59:36,106 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:36,193 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 16:59:36,492 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:36,497 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 16:59:36,513 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:36,518 - fire_safety - INFO - Request: PUT http://testserver/buildings/1
+2025-06-04 16:59:36,629 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:36,756 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 16:59:37,051 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:37,056 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 16:59:37,088 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:37,093 - fire_safety - INFO - Request: DELETE http://testserver/buildings/1
+2025-06-04 16:59:37,113 - fire_safety - INFO - Response: 204
+2025-06-04 16:59:37,118 - fire_safety - INFO - Request: GET http://testserver/buildings/1
+2025-06-04 16:59:37,128 - fire_safety - ERROR - HTTPException: 404 - Building not found
+2025-06-04 16:59:37,129 - fire_safety - INFO - Response: 404
+2025-06-04 16:59:37,228 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 16:59:37,526 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:37,532 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 16:59:37,547 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:37,552 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 16:59:37,571 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:37,574 - fire_safety - INFO - Request: POST http://testserver/incidents
+2025-06-04 16:59:37,597 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:37,727 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 16:59:38,025 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:38,030 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 16:59:38,047 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:38,052 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 16:59:38,085 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:38,185 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 16:59:38,482 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:38,487 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 16:59:38,523 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:38,528 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 16:59:38,541 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:38,546 - fire_safety - INFO - Request: PUT http://testserver/sensors/1
+2025-06-04 16:59:38,565 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:38,684 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 16:59:38,996 - fire_safety - INFO - Response: 200
+2025-06-04 16:59:39,001 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 16:59:39,012 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:39,017 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 16:59:39,025 - fire_safety - INFO - Response: 201
+2025-06-04 16:59:39,029 - fire_safety - INFO - Request: DELETE http://testserver/sensors/1
+2025-06-04 16:59:39,044 - fire_safety - INFO - Response: 204
+2025-06-04 16:59:39,049 - fire_safety - INFO - Request: GET http://testserver/sensors/1
+2025-06-04 16:59:39,054 - fire_safety - ERROR - HTTPException: 404 - Sensor not found
+2025-06-04 16:59:39,055 - fire_safety - INFO - Response: 404
+2025-06-04 17:40:39,542 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 17:40:39,906 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:39,963 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 17:40:40,290 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:40,294 - fire_safety - INFO - Request: POST http://testserver/token
+2025-06-04 17:40:40,599 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:40,652 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 17:40:40,968 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:40,972 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 17:40:40,990 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:41,047 - fire_safety - INFO - Request: GET http://testserver/buildings/
+2025-06-04 17:40:41,059 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:41,105 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 17:40:41,437 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:41,441 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 17:40:41,456 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:41,461 - fire_safety - INFO - Request: PUT http://testserver/buildings/1
+2025-06-04 17:40:41,480 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:41,533 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 17:40:41,867 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:41,873 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 17:40:41,888 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:41,892 - fire_safety - INFO - Request: DELETE http://testserver/buildings/1
+2025-06-04 17:40:41,910 - fire_safety - INFO - Response: 204
+2025-06-04 17:40:41,915 - fire_safety - INFO - Request: GET http://testserver/buildings/1
+2025-06-04 17:40:41,923 - fire_safety - ERROR - HTTPException: 404 - Building not found
+2025-06-04 17:40:41,923 - fire_safety - INFO - Response: 404
+2025-06-04 17:40:41,973 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 17:40:42,277 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:42,281 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 17:40:42,294 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:42,298 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 17:40:42,312 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:42,316 - fire_safety - INFO - Request: POST http://testserver/incidents
+2025-06-04 17:40:42,332 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:42,386 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 17:40:42,722 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:42,730 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 17:40:42,788 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:42,792 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 17:40:42,802 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:42,854 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 17:40:43,154 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:43,159 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 17:40:43,173 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:43,177 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 17:40:43,188 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:43,192 - fire_safety - INFO - Request: PUT http://testserver/sensors/1
+2025-06-04 17:40:43,209 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:43,259 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 17:40:43,564 - fire_safety - INFO - Response: 200
+2025-06-04 17:40:43,568 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 17:40:43,577 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:43,582 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 17:40:43,588 - fire_safety - INFO - Response: 201
+2025-06-04 17:40:43,592 - fire_safety - INFO - Request: DELETE http://testserver/sensors/1
+2025-06-04 17:40:43,604 - fire_safety - INFO - Response: 204
+2025-06-04 17:40:43,608 - fire_safety - INFO - Request: GET http://testserver/sensors/1
+2025-06-04 17:40:43,612 - fire_safety - ERROR - HTTPException: 404 - Sensor not found
+2025-06-04 17:40:43,612 - fire_safety - INFO - Response: 404
+2025-06-04 18:19:45,415 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 18:19:45,758 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:45,810 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 18:19:46,112 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:46,119 - fire_safety - INFO - Request: POST http://testserver/token
+2025-06-04 18:19:46,454 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:46,503 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 18:19:46,804 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:46,808 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 18:19:46,824 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:46,902 - fire_safety - INFO - Request: GET http://testserver/buildings/
+2025-06-04 18:19:46,913 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:46,963 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 18:19:47,263 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:47,266 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 18:19:47,279 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:47,283 - fire_safety - INFO - Request: PUT http://testserver/buildings/1
+2025-06-04 18:19:47,298 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:47,345 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 18:19:47,640 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:47,644 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 18:19:47,658 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:47,662 - fire_safety - INFO - Request: DELETE http://testserver/buildings/1
+2025-06-04 18:19:47,677 - fire_safety - INFO - Response: 204
+2025-06-04 18:19:47,681 - fire_safety - INFO - Request: GET http://testserver/buildings/1
+2025-06-04 18:19:47,688 - fire_safety - ERROR - HTTPException: 404 - Building not found
+2025-06-04 18:19:47,689 - fire_safety - INFO - Response: 404
+2025-06-04 18:19:47,737 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 18:19:48,039 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:48,042 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 18:19:48,055 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:48,059 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 18:19:48,072 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:48,076 - fire_safety - INFO - Request: POST http://testserver/incidents
+2025-06-04 18:19:48,092 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:48,141 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 18:19:48,438 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:48,441 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 18:19:48,454 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:48,458 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 18:19:48,469 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:48,517 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 18:19:48,818 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:48,822 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 18:19:48,835 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:48,839 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 18:19:48,849 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:48,853 - fire_safety - INFO - Request: PUT http://testserver/sensors/1
+2025-06-04 18:19:48,869 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:48,918 - fire_safety - INFO - Request: POST http://testserver/register
+2025-06-04 18:19:49,214 - fire_safety - INFO - Response: 200
+2025-06-04 18:19:49,219 - fire_safety - INFO - Request: POST http://testserver/buildings/
+2025-06-04 18:19:49,227 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:49,231 - fire_safety - INFO - Request: POST http://testserver/sensors/
+2025-06-04 18:19:49,237 - fire_safety - INFO - Response: 201
+2025-06-04 18:19:49,241 - fire_safety - INFO - Request: DELETE http://testserver/sensors/1
+2025-06-04 18:19:49,252 - fire_safety - INFO - Response: 204
+2025-06-04 18:19:49,255 - fire_safety - INFO - Request: GET http://testserver/sensors/1
+2025-06-04 18:19:49,259 - fire_safety - ERROR - HTTPException: 404 - Sensor not found
+2025-06-04 18:19:49,260 - fire_safety - INFO - Response: 404

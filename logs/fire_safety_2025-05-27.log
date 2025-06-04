@@ -1,0 +1,1309 @@
+2025-05-27 17:11:19,375 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/
+2025-05-27 17:11:19,376 - fire_safety - INFO - Response: 404
+2025-05-27 17:11:19,674 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-05-27 17:11:19,675 - fire_safety - INFO - Response: 404
+2025-05-27 17:11:31,225 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-27 17:11:31,226 - fire_safety - INFO - Response: 200
+2025-05-27 17:11:31,841 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-05-27 17:11:31,876 - fire_safety - INFO - Response: 200
+2025-05-27 17:11:33,371 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-27 17:11:33,372 - fire_safety - INFO - Response: 200
+2025-05-27 17:11:33,467 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-05-27 17:11:33,469 - fire_safety - INFO - Response: 200
+2025-05-27 17:13:18,556 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-27 17:13:18,557 - fire_safety - INFO - Response: 200
+2025-05-27 17:13:18,559 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-27 17:13:19,550 - fire_safety - INFO - Response: 200
+2025-05-27 17:13:32,584 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-27 17:13:32,883 - fire_safety - INFO - Response: 200
+2025-05-27 17:13:35,305 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 17:13:35,306 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 17:13:35,307 - fire_safety - INFO - Response: 200
+2025-05-27 17:13:35,308 - fire_safety - INFO - Response: 200
+2025-05-27 17:13:35,310 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 17:13:35,311 - fire_safety - INFO - Response: 307
+2025-05-27 17:13:35,325 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 17:13:35,326 - fire_safety - INFO - Response: 200
+2025-05-27 17:13:35,328 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 17:13:35,329 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 17:13:35,330 - fire_safety - INFO - Response: 307
+2025-05-27 17:13:35,383 - fire_safety - INFO - Response: 200
+2025-05-27 17:13:35,387 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 17:13:35,392 - fire_safety - INFO - Response: 200
+2025-05-27 17:14:18,272 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 17:14:18,273 - fire_safety - INFO - Response: 200
+2025-05-27 17:14:18,275 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 17:14:18,276 - fire_safety - INFO - Response: 307
+2025-05-27 17:14:18,282 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 17:14:18,282 - fire_safety - INFO - Response: 200
+2025-05-27 17:14:18,284 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 17:14:18,626 - fire_safety - ERROR - Request failed: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад "Магнит"', 'address': 'ул. Складская д. 222', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.ForeignKeyViolation: ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 253, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 66, in create_building
+    return crud.create_building(db=db, building=building)
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\crud.py", line 59, in create_building
+    db.commit()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад "Магнит"', 'address': 'ул. Складская д. 222', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-05-27 17:14:18,706 - fire_safety - ERROR - Unhandled exception: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад "Магнит"', 'address': 'ул. Складская д. 222', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+NoneType: None
+2025-05-27 17:14:22,497 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 17:14:22,498 - fire_safety - INFO - Response: 307
+2025-05-27 17:14:22,503 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 17:14:22,510 - fire_safety - ERROR - Request failed: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад "Магнит"', 'address': 'ул. Складская д. 222', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.ForeignKeyViolation: ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 253, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 66, in create_building
+    return crud.create_building(db=db, building=building)
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\crud.py", line 59, in create_building
+    db.commit()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад "Магнит"', 'address': 'ул. Складская д. 222', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-05-27 17:14:22,529 - fire_safety - ERROR - Unhandled exception: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад "Магнит"', 'address': 'ул. Складская д. 222', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+NoneType: None
+2025-05-27 17:14:22,944 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 17:14:22,945 - fire_safety - INFO - Response: 307
+2025-05-27 17:14:22,952 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 17:14:22,958 - fire_safety - ERROR - Request failed: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад "Магнит"', 'address': 'ул. Складская д. 222', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.ForeignKeyViolation: ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 253, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 66, in create_building
+    return crud.create_building(db=db, building=building)
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\crud.py", line 59, in create_building
+    db.commit()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад "Магнит"', 'address': 'ул. Складская д. 222', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-05-27 17:14:22,979 - fire_safety - ERROR - Unhandled exception: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад "Магнит"', 'address': 'ул. Складская д. 222', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+NoneType: None
+2025-05-27 17:18:41,744 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 17:18:41,745 - fire_safety - INFO - Response: 307
+2025-05-27 17:18:41,746 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 17:18:41,747 - fire_safety - INFO - Response: 307
+2025-05-27 17:18:41,750 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 17:18:41,779 - fire_safety - INFO - Response: 200
+2025-05-27 17:18:41,781 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 17:18:41,788 - fire_safety - INFO - Response: 200
+2025-05-27 17:19:18,801 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/users/me
+2025-05-27 17:19:18,803 - fire_safety - INFO - Response: 200
+2025-05-27 17:19:18,805 - fire_safety - INFO - Request: GET http://localhost:8000/users/me
+2025-05-27 17:19:18,807 - fire_safety - INFO - Response: 422
+2025-05-27 18:19:21,103 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/users/me
+2025-05-27 18:19:21,104 - fire_safety - INFO - Response: 200
+2025-05-27 18:19:21,106 - fire_safety - INFO - Request: GET http://localhost:8000/users/me
+2025-05-27 18:19:21,115 - fire_safety - INFO - Response: 422
+2025-05-27 18:23:36,694 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-27 18:23:36,695 - fire_safety - INFO - Response: 200
+2025-05-27 18:23:36,973 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-05-27 18:23:37,000 - fire_safety - INFO - Response: 200
+2025-05-27 18:23:38,277 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-27 18:23:38,278 - fire_safety - INFO - Response: 200
+2025-05-27 18:23:38,362 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-05-27 18:23:38,364 - fire_safety - INFO - Response: 200
+2025-05-27 18:24:16,281 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-27 18:24:16,282 - fire_safety - INFO - Response: 200
+2025-05-27 18:24:16,285 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-27 18:24:16,654 - fire_safety - INFO - Response: 200
+2025-05-27 18:24:22,519 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 18:24:22,520 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 18:24:22,520 - fire_safety - INFO - Response: 200
+2025-05-27 18:24:22,522 - fire_safety - INFO - Response: 200
+2025-05-27 18:24:22,524 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 18:24:22,525 - fire_safety - INFO - Response: 307
+2025-05-27 18:24:22,537 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 18:24:22,539 - fire_safety - INFO - Response: 307
+2025-05-27 18:24:22,540 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 18:24:22,540 - fire_safety - INFO - Response: 200
+2025-05-27 18:24:22,551 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 18:24:22,563 - fire_safety - INFO - Response: 200
+2025-05-27 18:24:22,564 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 18:24:22,572 - fire_safety - INFO - Response: 200
+2025-05-27 18:24:30,343 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/users/me
+2025-05-27 18:24:30,344 - fire_safety - INFO - Response: 200
+2025-05-27 18:24:30,346 - fire_safety - INFO - Request: GET http://localhost:8000/users/me
+2025-05-27 18:24:30,348 - fire_safety - INFO - Response: 422
+2025-05-27 18:41:03,448 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 18:41:03,450 - fire_safety - INFO - Response: 200
+2025-05-27 18:41:03,452 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 18:41:03,453 - fire_safety - INFO - Response: 200
+2025-05-27 18:41:03,454 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 18:41:03,455 - fire_safety - INFO - Response: 307
+2025-05-27 18:41:03,460 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 18:41:03,461 - fire_safety - INFO - Response: 307
+2025-05-27 18:41:03,463 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 18:41:03,464 - fire_safety - INFO - Response: 200
+2025-05-27 18:41:03,467 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 18:41:03,501 - fire_safety - INFO - Response: 200
+2025-05-27 18:41:03,506 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 18:41:03,512 - fire_safety - INFO - Response: 200
+2025-05-27 18:41:07,625 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/users/me
+2025-05-27 18:41:07,626 - fire_safety - INFO - Response: 200
+2025-05-27 18:41:07,629 - fire_safety - INFO - Request: GET http://localhost:8000/users/me
+2025-05-27 18:41:07,631 - fire_safety - INFO - Response: 422
+2025-05-27 18:46:26,774 - fire_safety - INFO - Request: POST http://127.0.0.1:8000/buildings/
+2025-05-27 18:46:26,792 - fire_safety - ERROR - Request failed: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад Магнита', 'address': 'ул. Складская', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.ForeignKeyViolation: ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 269, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 82, in create_building
+    return crud.create_building(db=db, building=building)
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\crud.py", line 59, in create_building
+    db.commit()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад Магнита', 'address': 'ул. Складская', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-05-27 18:46:26,823 - fire_safety - ERROR - Unhandled exception: (psycopg2.errors.ForeignKeyViolation) ОШИБКА:  INSERT или UPDATE в таблице "buildings" нарушает ограничение внешнего ключа "buildings_owner_id_fkey"
+DETAIL:  Ключ (owner_id)=(1) отсутствует в таблице "users".
+
+[SQL: INSERT INTO buildings (name, address, owner_id, created_at) VALUES (%(name)s, %(address)s, %(owner_id)s, %(created_at)s) RETURNING buildings.id]
+[parameters: {'name': 'Склад Магнита', 'address': 'ул. Складская', 'owner_id': 1, 'created_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+NoneType: None
+2025-05-27 18:46:45,512 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/users/?skip=0&limit=100
+2025-05-27 18:46:45,530 - fire_safety - INFO - Response: 200
+2025-05-27 18:46:53,323 - fire_safety - INFO - Request: POST http://127.0.0.1:8000/buildings/
+2025-05-27 18:46:53,334 - fire_safety - ERROR - Request failed: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 269, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+
+2025-05-27 18:46:53,344 - fire_safety - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+NoneType: None
+2025-05-27 18:56:18,841 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 18:56:18,842 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 18:56:18,843 - fire_safety - INFO - Response: 200
+2025-05-27 18:56:18,844 - fire_safety - INFO - Response: 200
+2025-05-27 18:56:18,846 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 18:56:18,847 - fire_safety - INFO - Response: 307
+2025-05-27 18:56:18,848 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 18:56:18,849 - fire_safety - INFO - Response: 307
+2025-05-27 18:56:18,853 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 18:56:18,854 - fire_safety - INFO - Response: 200
+2025-05-27 18:56:18,855 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 18:56:18,857 - fire_safety - INFO - Response: 200
+2025-05-27 18:56:18,859 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 18:56:18,891 - fire_safety - ERROR - Request failed: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 269, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+
+2025-05-27 18:56:18,901 - fire_safety - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+NoneType: None
+2025-05-27 18:56:18,921 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 18:56:18,928 - fire_safety - ERROR - Request failed: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 269, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+
+2025-05-27 18:56:18,935 - fire_safety - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+NoneType: None
+2025-05-27 18:57:03,075 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 18:57:03,076 - fire_safety - INFO - Response: 200
+2025-05-27 18:57:03,078 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 18:57:03,079 - fire_safety - INFO - Response: 307
+2025-05-27 18:57:03,085 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 18:57:03,086 - fire_safety - INFO - Response: 200
+2025-05-27 18:57:03,090 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 18:57:03,098 - fire_safety - WARNING - Token expired
+2025-05-27 18:57:03,099 - fire_safety - ERROR - HTTPException: 401 - Token expired
+2025-05-27 18:57:03,102 - fire_safety - INFO - Response: 401
+2025-05-27 18:57:12,018 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-27 18:57:12,019 - fire_safety - INFO - Response: 200
+2025-05-27 18:57:12,021 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-27 18:57:12,395 - fire_safety - INFO - Response: 200
+2025-05-27 18:57:14,146 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 18:57:14,148 - fire_safety - INFO - Response: 307
+2025-05-27 18:57:14,151 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 18:57:14,151 - fire_safety - INFO - Response: 307
+2025-05-27 18:57:14,156 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 18:57:14,167 - fire_safety - ERROR - Request failed: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 280, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+
+2025-05-27 18:57:14,177 - fire_safety - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+NoneType: None
+2025-05-27 18:57:14,197 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 18:57:14,203 - fire_safety - ERROR - Request failed: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 280, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+
+2025-05-27 18:57:14,209 - fire_safety - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+NoneType: None
+2025-05-27 18:57:25,775 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 18:57:25,777 - fire_safety - INFO - Response: 307
+2025-05-27 18:57:25,783 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 18:57:25,792 - fire_safety - INFO - Response: 422
+2025-05-27 18:58:20,583 - fire_safety - INFO - Request: POST http://127.0.0.1:8000/buildings/
+2025-05-27 18:58:20,586 - fire_safety - ERROR - HTTPException: 401 - Not authenticated
+2025-05-27 18:58:20,587 - fire_safety - INFO - Response: 401
+2025-05-27 19:31:19,589 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 19:31:19,590 - fire_safety - INFO - Response: 200
+2025-05-27 19:31:19,592 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 19:31:19,593 - fire_safety - INFO - Response: 307
+2025-05-27 19:31:19,598 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 19:31:19,600 - fire_safety - INFO - Response: 200
+2025-05-27 19:31:19,602 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 19:31:19,609 - fire_safety - WARNING - Token expired
+2025-05-27 19:31:19,610 - fire_safety - ERROR - HTTPException: 401 - Token expired
+2025-05-27 19:31:19,611 - fire_safety - INFO - Response: 401
+2025-05-27 19:31:27,829 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-27 19:31:27,830 - fire_safety - INFO - Response: 200
+2025-05-27 19:31:27,832 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-27 19:31:28,197 - fire_safety - INFO - Response: 200
+2025-05-27 19:31:29,851 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 19:31:29,852 - fire_safety - INFO - Response: 307
+2025-05-27 19:31:29,855 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 19:31:29,856 - fire_safety - INFO - Response: 307
+2025-05-27 19:31:29,861 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 19:31:29,871 - fire_safety - ERROR - Request failed: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 280, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+
+2025-05-27 19:31:29,880 - fire_safety - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+NoneType: None
+2025-05-27 19:31:29,899 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 19:31:29,904 - fire_safety - ERROR - Request failed: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 280, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+
+2025-05-27 19:31:29,910 - fire_safety - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+NoneType: None
+2025-05-27 19:31:34,107 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 19:31:34,108 - fire_safety - INFO - Response: 307
+2025-05-27 19:31:34,113 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 19:31:34,121 - fire_safety - INFO - Response: 422
+2025-05-27 19:39:07,827 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 19:39:07,828 - fire_safety - INFO - Response: 307
+2025-05-27 19:39:07,834 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 19:39:07,865 - fire_safety - INFO - Response: 422
+2025-05-27 19:39:35,490 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-27 19:39:35,491 - fire_safety - INFO - Response: 200
+2025-05-27 19:39:35,765 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-05-27 19:39:35,791 - fire_safety - INFO - Response: 200
+2025-05-27 19:39:42,440 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 19:39:42,441 - fire_safety - INFO - Response: 307
+2025-05-27 19:39:42,447 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 19:39:42,477 - fire_safety - INFO - Response: 422
+2025-05-27 19:47:52,903 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 19:47:52,940 - fire_safety - INFO - Response: 200
+2025-05-27 19:47:52,942 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 19:47:52,943 - fire_safety - INFO - Response: 307
+2025-05-27 19:47:52,948 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 19:47:52,949 - fire_safety - INFO - Response: 200
+2025-05-27 19:47:52,952 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 19:47:53,000 - fire_safety - INFO - Response: 201
+2025-05-27 19:47:53,102 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 19:47:53,103 - fire_safety - INFO - Response: 307
+2025-05-27 19:47:53,149 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 19:47:53,149 - fire_safety - INFO - Response: 307
+2025-05-27 19:47:53,153 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 19:47:53,199 - fire_safety - ERROR - Request failed: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 281, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+
+2025-05-27 19:47:53,209 - fire_safety - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+NoneType: None
+2025-05-27 19:47:53,229 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 19:47:53,237 - fire_safety - ERROR - Request failed: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 281, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+
+2025-05-27 19:47:53,242 - fire_safety - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+NoneType: None
+2025-05-27 19:48:10,970 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/buildings/?skip=0&limit=100
+2025-05-27 19:48:10,978 - fire_safety - ERROR - Request failed: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\ЛР4 ТМП\main.py", line 281, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+
+2025-05-27 19:48:10,986 - fire_safety - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None}
+NoneType: None
+2025-05-27 20:08:22,827 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 20:08:22,828 - fire_safety - INFO - Response: 200
+2025-05-27 20:08:22,830 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 20:08:22,831 - fire_safety - INFO - Response: 307
+2025-05-27 20:08:22,838 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 20:08:22,839 - fire_safety - INFO - Response: 200
+2025-05-27 20:08:22,841 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 20:08:22,850 - fire_safety - WARNING - Token expired
+2025-05-27 20:08:22,852 - fire_safety - ERROR - HTTPException: 401 - Token expired
+2025-05-27 20:08:22,853 - fire_safety - INFO - Response: 401
+2025-05-27 20:08:29,481 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-27 20:08:29,482 - fire_safety - INFO - Response: 200
+2025-05-27 20:08:29,484 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-27 20:08:29,898 - fire_safety - INFO - Response: 200
+2025-05-27 20:08:31,110 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 20:08:31,111 - fire_safety - INFO - Response: 307
+2025-05-27 20:08:31,113 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 20:08:31,115 - fire_safety - INFO - Response: 307
+2025-05-27 20:08:31,118 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 20:08:31,130 - fire_safety - INFO - Response: 200
+2025-05-27 20:08:31,132 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 20:08:31,142 - fire_safety - INFO - Response: 200
+2025-05-27 20:08:34,647 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-27 20:08:34,648 - fire_safety - INFO - Response: 307
+2025-05-27 20:08:34,655 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-27 20:08:34,674 - fire_safety - INFO - Response: 201
+2025-05-27 20:08:34,706 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 20:08:34,707 - fire_safety - INFO - Response: 307
+2025-05-27 20:08:34,708 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 20:08:34,709 - fire_safety - INFO - Response: 307
+2025-05-27 20:08:34,712 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 20:08:34,721 - fire_safety - INFO - Response: 200
+2025-05-27 20:08:34,723 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 20:08:34,728 - fire_safety - INFO - Response: 200
+2025-05-27 20:08:38,933 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 20:08:38,934 - fire_safety - INFO - Response: 307
+2025-05-27 20:08:38,936 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 20:08:38,937 - fire_safety - INFO - Response: 307
+2025-05-27 20:08:38,941 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 20:08:38,952 - fire_safety - INFO - Response: 200
+2025-05-27 20:08:38,954 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 20:08:38,962 - fire_safety - INFO - Response: 200
+2025-05-27 20:42:58,468 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 20:42:58,470 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 20:42:58,470 - fire_safety - INFO - Response: 200
+2025-05-27 20:42:58,471 - fire_safety - INFO - Response: 200
+2025-05-27 20:42:58,473 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 20:42:58,473 - fire_safety - INFO - Response: 307
+2025-05-27 20:42:58,475 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 20:42:58,475 - fire_safety - INFO - Response: 307
+2025-05-27 20:42:58,479 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 20:42:58,480 - fire_safety - INFO - Response: 200
+2025-05-27 20:42:58,482 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 20:42:58,482 - fire_safety - INFO - Response: 200
+2025-05-27 20:42:58,484 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 20:42:58,492 - fire_safety - INFO - Response: 200
+2025-05-27 20:42:58,495 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 20:42:58,501 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:16,232 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 21:52:16,233 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-27 21:52:16,234 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:16,235 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:16,237 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 21:52:16,238 - fire_safety - INFO - Response: 307
+2025-05-27 21:52:16,241 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-27 21:52:16,242 - fire_safety - INFO - Response: 307
+2025-05-27 21:52:16,245 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 21:52:16,246 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:16,248 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-27 21:52:16,248 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:16,250 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 21:52:16,278 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:16,282 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-27 21:52:16,289 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:17,620 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/7
+2025-05-27 21:52:17,621 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/7
+2025-05-27 21:52:17,622 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:17,623 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:17,625 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-27 21:52:17,633 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:17,635 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-27 21:52:17,641 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:17,642 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=7
+2025-05-27 21:52:17,642 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:17,644 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-27 21:52:17,645 - fire_safety - INFO - Response: 307
+2025-05-27 21:52:17,650 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/?building_id=7
+2025-05-27 21:52:17,651 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-27 21:52:17,651 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:17,653 - fire_safety - INFO - Response: 307
+2025-05-27 21:52:17,655 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-27 21:52:17,664 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:17,666 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-27 21:52:17,672 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:28,111 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors
+2025-05-27 21:52:28,112 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:28,115 - fire_safety - INFO - Request: POST http://localhost:8000/sensors
+2025-05-27 21:52:28,116 - fire_safety - INFO - Response: 307
+2025-05-27 21:52:28,121 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/
+2025-05-27 21:52:28,122 - fire_safety - INFO - Response: 200
+2025-05-27 21:52:28,124 - fire_safety - INFO - Request: POST http://localhost:8000/sensors/
+2025-05-27 21:52:28,129 - fire_safety - INFO - Response: 422

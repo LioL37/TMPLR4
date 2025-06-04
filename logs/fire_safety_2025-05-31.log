@@ -1,0 +1,784 @@
+2025-05-31 13:42:04,743 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-31 13:42:04,744 - fire_safety - INFO - Response: 200
+2025-05-31 13:42:04,747 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-31 13:42:05,844 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:34,360 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-31 14:10:34,361 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:34,364 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-31 14:10:34,746 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:36,934 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 14:10:36,936 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 14:10:36,936 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:36,937 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:36,940 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 14:10:36,941 - fire_safety - INFO - Response: 307
+2025-05-31 14:10:36,945 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 14:10:36,951 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-31 14:10:36,952 - fire_safety - INFO - Response: 307
+2025-05-31 14:10:36,954 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:36,957 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 14:10:37,061 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:37,064 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 14:10:37,071 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:38,220 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/7
+2025-05-31 14:10:38,221 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=7
+2025-05-31 14:10:38,222 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:38,223 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/7
+2025-05-31 14:10:38,224 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:38,225 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=7
+2025-05-31 14:10:38,226 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:38,228 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:10:38,229 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:38,236 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 14:10:38,237 - fire_safety - INFO - Response: 307
+2025-05-31 14:10:38,242 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 14:10:38,243 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/?building_id=7
+2025-05-31 14:10:38,244 - fire_safety - INFO - Response: 307
+2025-05-31 14:10:38,245 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:38,246 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:38,247 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/?building_id=7
+2025-05-31 14:10:38,248 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 14:10:38,249 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:38,250 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:10:38,318 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:38,369 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:38,372 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 14:10:38,381 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:43,094 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 14:10:43,100 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 14:10:43,100 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:10:43,100 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:10:43,101 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:43,102 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:43,103 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:43,104 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:43,105 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 14:10:43,106 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:10:43,108 - fire_safety - INFO - Response: 307
+2025-05-31 14:10:43,114 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:10:43,115 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:10:43,115 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:43,116 - fire_safety - INFO - Response: 307
+2025-05-31 14:10:43,118 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:10:43,120 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:43,126 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 14:10:43,131 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:43,205 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:43,207 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:10:43,210 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:10:43,217 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:43,220 - fire_safety - INFO - Response: 200
+2025-05-31 14:10:43,223 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:10:43,230 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,514 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 14:37:39,515 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:37:39,516 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:37:39,516 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 14:37:39,517 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,519 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,520 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,520 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,526 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 14:37:39,527 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:37:39,535 - fire_safety - INFO - Response: 307
+2025-05-31 14:37:39,552 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:37:39,553 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:37:39,557 - fire_safety - INFO - Response: 307
+2025-05-31 14:37:39,558 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,563 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:37:39,572 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,578 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 14:37:39,586 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,590 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:37:39,594 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/7
+2025-05-31 14:37:39,597 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,598 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,600 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:37:39,607 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,665 - fire_safety - INFO - Response: 200
+2025-05-31 14:37:39,698 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:37:39,707 - fire_safety - INFO - Response: 200
+2025-05-31 14:38:49,587 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/users/me
+2025-05-31 14:38:49,588 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/users/me
+2025-05-31 14:38:49,588 - fire_safety - INFO - Response: 200
+2025-05-31 14:38:49,590 - fire_safety - INFO - Response: 200
+2025-05-31 14:38:49,591 - fire_safety - INFO - Request: GET http://localhost:8000/users/me
+2025-05-31 14:38:49,594 - fire_safety - INFO - Response: 422
+2025-05-31 14:38:49,596 - fire_safety - INFO - Request: GET http://localhost:8000/users/me
+2025-05-31 14:38:49,598 - fire_safety - INFO - Response: 422
+2025-05-31 14:39:59,511 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-31 14:39:59,512 - fire_safety - INFO - Response: 200
+2025-05-31 14:39:59,514 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-31 14:39:59,878 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:02,073 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 14:40:02,074 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:02,075 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 14:40:02,076 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:02,083 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 14:40:02,085 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:02,089 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-31 14:40:02,090 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 14:40:02,093 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:02,098 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:02,103 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 14:40:02,112 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:02,115 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 14:40:02,122 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:03,508 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=7
+2025-05-31 14:40:03,509 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=7
+2025-05-31 14:40:03,512 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:40:03,512 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:03,513 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:03,515 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 14:40:03,516 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:03,525 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 14:40:03,526 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/?building_id=7
+2025-05-31 14:40:03,526 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:03,527 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:03,528 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/?building_id=7
+2025-05-31 14:40:03,529 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 14:40:03,530 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:03,534 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:03,538 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:40:03,550 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:03,553 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 14:40:03,554 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:03,560 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:24,269 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 14:40:24,270 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:40:24,271 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:24,277 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:40:24,278 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:24,281 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:40:24,289 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:24,299 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 14:40:24,308 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:24,309 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:24,311 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:40:24,318 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:40:24,319 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:24,326 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:24,330 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:40:24,335 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:29,985 - fire_safety - INFO - Request: GET http://localhost:8000/users/me
+2025-05-31 14:40:29,987 - fire_safety - INFO - Response: 422
+2025-05-31 14:40:29,990 - fire_safety - INFO - Request: GET http://localhost:8000/users/me
+2025-05-31 14:40:29,997 - fire_safety - INFO - Response: 422
+2025-05-31 14:40:33,131 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-31 14:40:33,452 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:34,600 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 14:40:34,601 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:34,603 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 14:40:34,604 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:34,608 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 14:40:34,615 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:34,620 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 14:40:34,626 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:37,912 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:40:37,914 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 14:40:37,915 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:37,917 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 14:40:37,919 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:37,922 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 14:40:37,931 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:37,936 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:37,937 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:40:37,938 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 14:40:37,946 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:37,947 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:38,771 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 14:40:38,775 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:40:38,776 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:38,779 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:40:38,780 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:40:38,781 - fire_safety - INFO - Response: 307
+2025-05-31 14:40:38,786 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:38,789 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 14:40:38,791 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:38,794 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:40:38,797 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:40:38,807 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:38,810 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:38,868 - fire_safety - INFO - Response: 200
+2025-05-31 14:40:38,870 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:40:38,875 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,523 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 14:57:06,523 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,525 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:57:06,525 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 14:57:06,526 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,527 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,528 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:57:06,529 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,564 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:57:06,566 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 14:57:06,566 - fire_safety - INFO - Response: 307
+2025-05-31 14:57:06,581 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,584 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 14:57:06,584 - fire_safety - INFO - Response: 307
+2025-05-31 14:57:06,600 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 14:57:06,606 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,610 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:57:06,610 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,614 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:57:06,620 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,630 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 14:57:06,636 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,643 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/7
+2025-05-31 14:57:06,644 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,649 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:57:06,655 - fire_safety - INFO - Response: 200
+2025-05-31 14:57:06,677 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 14:57:06,684 - fire_safety - INFO - Response: 200
+2025-05-31 15:08:53,537 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/users/me
+2025-05-31 15:08:53,565 - fire_safety - INFO - Response: 422
+2025-05-31 15:10:14,204 - fire_safety - INFO - Request: POST http://127.0.0.1:8000/token
+2025-05-31 15:10:14,566 - fire_safety - INFO - Response: 200
+2025-05-31 15:10:45,686 - fire_safety - INFO - Request: POST http://127.0.0.1:8000/validate-token
+2025-05-31 15:10:45,689 - fire_safety - WARNING - Invalid token type: expected 401: Invalid token, got access
+2025-05-31 15:10:45,690 - fire_safety - ERROR - HTTPException: 401 - Could not validate credentials
+2025-05-31 15:10:45,691 - fire_safety - INFO - Response: 401
+2025-05-31 15:11:23,286 - fire_safety - INFO - Request: POST http://127.0.0.1:8000/validate-token
+2025-05-31 15:11:23,289 - fire_safety - WARNING - Invalid token type: expected 401: Invalid token, got refresh
+2025-05-31 15:11:23,290 - fire_safety - ERROR - HTTPException: 401 - Could not validate credentials
+2025-05-31 15:11:23,291 - fire_safety - INFO - Response: 401
+2025-05-31 15:11:33,765 - fire_safety - INFO - Request: POST http://127.0.0.1:8000/token
+2025-05-31 15:11:34,070 - fire_safety - INFO - Response: 200
+2025-05-31 15:11:35,700 - fire_safety - INFO - Request: POST http://127.0.0.1:8000/token
+2025-05-31 15:11:36,012 - fire_safety - INFO - Response: 200
+2025-05-31 15:11:38,003 - fire_safety - INFO - Request: POST http://127.0.0.1:8000/token
+2025-05-31 15:11:38,308 - fire_safety - INFO - Response: 200
+2025-05-31 15:21:38,936 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 15:21:38,937 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 15:21:38,937 - fire_safety - INFO - Response: 200
+2025-05-31 15:21:38,939 - fire_safety - INFO - Response: 200
+2025-05-31 15:21:38,943 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 15:21:38,944 - fire_safety - INFO - Response: 307
+2025-05-31 15:21:38,946 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 15:21:38,947 - fire_safety - INFO - Response: 307
+2025-05-31 15:21:38,949 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-31 15:21:38,950 - fire_safety - INFO - Response: 200
+2025-05-31 15:21:38,951 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-31 15:21:38,952 - fire_safety - INFO - Response: 200
+2025-05-31 15:21:38,953 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 15:21:38,987 - fire_safety - INFO - Response: 200
+2025-05-31 15:21:38,989 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 15:21:38,996 - fire_safety - INFO - Response: 200
+2025-05-31 15:21:48,049 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-31 15:21:48,050 - fire_safety - INFO - Response: 200
+2025-05-31 15:21:48,053 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-31 15:21:48,396 - fire_safety - INFO - Response: 200
+2025-05-31 15:21:57,080 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/users/me
+2025-05-31 15:21:57,084 - fire_safety - INFO - Response: 200
+2025-05-31 15:21:57,088 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/users/me
+2025-05-31 15:21:57,089 - fire_safety - INFO - Response: 200
+2025-05-31 15:21:57,096 - fire_safety - INFO - Request: GET http://localhost:8000/users/me
+2025-05-31 15:21:57,101 - fire_safety - INFO - Response: 422
+2025-05-31 15:21:57,106 - fire_safety - INFO - Request: GET http://localhost:8000/users/me
+2025-05-31 15:21:57,138 - fire_safety - INFO - Response: 422
+2025-05-31 15:22:44,591 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/users/me
+2025-05-31 15:22:44,593 - fire_safety - INFO - Response: 422
+2025-05-31 15:47:46,801 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-31 15:47:46,802 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:46,804 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-31 15:47:47,178 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:48,582 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 15:47:48,584 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 15:47:48,585 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:48,586 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:48,588 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 15:47:48,589 - fire_safety - INFO - Response: 307
+2025-05-31 15:47:48,593 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-31 15:47:48,594 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:48,594 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 15:47:48,596 - fire_safety - INFO - Response: 307
+2025-05-31 15:47:48,598 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 15:47:48,610 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:48,615 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 15:47:48,621 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:49,885 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/7
+2025-05-31 15:47:49,887 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=7
+2025-05-31 15:47:49,887 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:49,888 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/7
+2025-05-31 15:47:49,889 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:49,891 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=7
+2025-05-31 15:47:49,891 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:49,893 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:49,894 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 15:47:49,895 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 15:47:49,896 - fire_safety - INFO - Response: 307
+2025-05-31 15:47:49,899 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/?building_id=7
+2025-05-31 15:47:49,903 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 15:47:49,904 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:49,906 - fire_safety - INFO - Response: 307
+2025-05-31 15:47:49,908 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 15:47:49,910 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:49,916 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 15:47:49,926 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:49,934 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:49,936 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 15:47:49,941 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:50,928 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 15:47:50,929 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 15:47:50,930 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:50,931 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 15:47:50,932 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 15:47:50,933 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:50,934 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:50,935 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:50,936 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 15:47:50,938 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 15:47:50,939 - fire_safety - INFO - Response: 307
+2025-05-31 15:47:50,943 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 15:47:50,944 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 15:47:50,945 - fire_safety - INFO - Response: 307
+2025-05-31 15:47:50,946 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:50,948 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 15:47:50,949 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 15:47:50,949 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:50,951 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:50,954 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 15:47:50,959 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:50,964 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 15:47:50,968 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 15:47:50,978 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:50,988 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:51,031 - fire_safety - INFO - Response: 200
+2025-05-31 15:47:51,036 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 15:47:51,040 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,503 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 16:01:19,504 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 16:01:19,504 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 16:01:19,505 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 16:01:19,505 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,507 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,508 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,509 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,510 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 16:01:19,512 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 16:01:19,514 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:19,518 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 16:01:19,519 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 16:01:19,520 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:19,521 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,524 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 16:01:19,525 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,526 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 16:01:19,526 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,529 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 16:01:19,543 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,552 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 16:01:19,555 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,558 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,566 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/7
+2025-05-31 16:01:19,566 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,569 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:01:19,576 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:19,579 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:01:19,585 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:46,406 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 16:01:46,407 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:46,409 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 16:01:46,409 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:46,412 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:01:46,413 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:46,420 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:01:46,421 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:46,422 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-31 16:01:46,423 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:46,428 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-31 16:01:46,429 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:46,453 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:01:46,500 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:46,504 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:01:46,511 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:49,888 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-31 16:01:49,889 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:49,892 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-31 16:01:50,225 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:51,811 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:01:51,811 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:51,817 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:01:51,818 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:51,820 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:01:51,828 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:51,834 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:01:51,841 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:52,856 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=7
+2025-05-31 16:01:52,858 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=7
+2025-05-31 16:01:52,859 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:52,860 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:01:52,861 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:52,862 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 16:01:52,863 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:52,867 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/?building_id=7
+2025-05-31 16:01:52,868 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 16:01:52,870 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:52,871 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:52,873 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 16:01:52,883 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:52,886 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:01:52,891 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:52,895 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:52,897 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 16:01:52,903 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:56,278 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:01:56,279 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 16:01:56,280 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:56,290 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 16:01:56,292 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:56,293 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 16:01:56,294 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:56,301 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:56,328 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:01:56,329 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 16:01:56,345 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:56,351 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:58,471 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:01:58,477 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 16:01:58,485 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:58,489 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 16:01:58,490 - fire_safety - INFO - Response: 307
+2025-05-31 16:01:58,491 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:58,520 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 16:01:58,534 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:58,539 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:01:58,545 - fire_safety - INFO - Response: 200
+2025-05-31 16:01:58,549 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 16:01:58,556 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,256 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/4
+2025-05-31 16:02:04,259 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=4
+2025-05-31 16:02:04,260 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,261 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,263 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/4
+2025-05-31 16:02:04,264 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,265 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=4
+2025-05-31 16:02:04,265 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,267 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/4
+2025-05-31 16:02:04,269 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=4
+2025-05-31 16:02:04,271 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:04,275 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=4
+2025-05-31 16:02:04,277 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:04,279 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents/?sensor_id=4
+2025-05-31 16:02:04,280 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,282 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents/?sensor_id=4
+2025-05-31 16:02:04,283 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,284 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,288 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=4
+2025-05-31 16:02:04,290 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/4
+2025-05-31 16:02:04,295 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,297 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,301 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=4
+2025-05-31 16:02:04,306 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:02:04,309 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,314 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:04,317 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:02:04,322 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:07,495 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/4
+2025-05-31 16:02:07,506 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:07,508 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/4
+2025-05-31 16:02:07,513 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:10,521 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/4
+2025-05-31 16:02:10,522 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:10,524 - fire_safety - INFO - Request: PUT http://localhost:8000/sensors/4
+2025-05-31 16:02:11,399 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:11,429 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/4
+2025-05-31 16:02:11,431 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=4
+2025-05-31 16:02:11,433 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:11,440 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=4
+2025-05-31 16:02:11,442 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=4
+2025-05-31 16:02:11,442 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:11,445 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:11,449 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/4
+2025-05-31 16:02:11,456 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:11,459 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=4
+2025-05-31 16:02:11,460 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:11,466 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:02:11,469 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:11,474 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:11,479 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:02:11,485 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:14,997 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:02:14,998 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:14,999 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:02:15,001 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:15,003 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:02:15,011 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:15,016 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:02:15,022 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:16,120 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:02:16,121 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 16:02:16,122 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:16,125 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 16:02:16,126 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 16:02:16,127 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:16,137 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:16,141 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 16:02:16,142 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:16,146 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 16:02:16,150 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:16,153 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:17,111 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:02:17,112 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:17,114 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:02:17,115 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:02:17,116 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:17,124 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:17,126 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:02:17,134 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:21,502 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 16:02:21,503 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:21,506 - fire_safety - INFO - Request: POST http://localhost:8000/buildings
+2025-05-31 16:02:21,507 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:21,509 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-31 16:02:21,510 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:21,512 - fire_safety - INFO - Request: POST http://localhost:8000/buildings/
+2025-05-31 16:02:21,834 - fire_safety - INFO - Response: 201
+2025-05-31 16:02:21,872 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:02:21,873 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:21,874 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:02:21,876 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:21,876 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:02:21,885 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:21,887 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:02:21,892 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:23,103 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/8
+2025-05-31 16:02:23,104 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:23,107 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/8
+2025-05-31 16:02:23,107 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=8
+2025-05-31 16:02:23,108 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=8
+2025-05-31 16:02:23,109 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/8
+2025-05-31 16:02:23,109 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:23,111 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:23,112 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:23,116 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=8
+2025-05-31 16:02:23,117 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:23,124 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=8
+2025-05-31 16:02:23,125 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/?building_id=8
+2025-05-31 16:02:23,126 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:23,126 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:23,128 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:23,129 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/?building_id=8
+2025-05-31 16:02:23,130 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/8
+2025-05-31 16:02:23,131 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:23,133 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=8
+2025-05-31 16:02:23,282 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:23,283 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:23,285 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=8
+2025-05-31 16:02:23,291 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:25,060 - fire_safety - INFO - Request: DELETE http://localhost:8000/buildings/8
+2025-05-31 16:02:25,126 - fire_safety - INFO - Response: 204
+2025-05-31 16:02:25,157 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:02:25,158 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:25,161 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:02:25,163 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:02:25,163 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:25,170 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:25,173 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:02:25,181 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:27,137 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:02:27,138 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:27,140 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:02:27,141 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:02:27,142 - fire_safety - INFO - Response: 307
+2025-05-31 16:02:27,152 - fire_safety - INFO - Response: 200
+2025-05-31 16:02:27,158 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:02:27,167 - fire_safety - INFO - Response: 200
+2025-05-31 16:03:31,195 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-31 16:03:31,502 - fire_safety - INFO - Response: 200
+2025-05-31 16:03:32,970 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:03:32,971 - fire_safety - INFO - Response: 307
+2025-05-31 16:03:32,972 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:03:32,974 - fire_safety - INFO - Response: 307
+2025-05-31 16:03:32,975 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:03:32,982 - fire_safety - INFO - Response: 200
+2025-05-31 16:03:32,984 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:03:32,990 - fire_safety - INFO - Response: 200
+2025-05-31 16:07:19,112 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:07:19,113 - fire_safety - INFO - Response: 307
+2025-05-31 16:07:19,116 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:07:19,117 - fire_safety - INFO - Response: 307
+2025-05-31 16:07:19,120 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:07:19,126 - fire_safety - INFO - Response: 200
+2025-05-31 16:07:19,129 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:07:19,136 - fire_safety - INFO - Response: 200
+2025-05-31 16:29:34,510 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 16:29:34,511 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 16:29:34,511 - fire_safety - INFO - Response: 200
+2025-05-31 16:29:34,514 - fire_safety - INFO - Response: 200
+2025-05-31 16:29:34,515 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:29:34,516 - fire_safety - INFO - Response: 307
+2025-05-31 16:29:34,519 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 16:29:34,520 - fire_safety - INFO - Response: 307
+2025-05-31 16:29:34,521 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-31 16:29:34,521 - fire_safety - INFO - Response: 200
+2025-05-31 16:29:34,523 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-31 16:29:34,524 - fire_safety - INFO - Response: 200
+2025-05-31 16:29:34,525 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:29:34,533 - fire_safety - INFO - Response: 200
+2025-05-31 16:29:34,536 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 16:29:34,544 - fire_safety - INFO - Response: 200
+2025-05-31 16:36:01,589 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-31 16:36:01,590 - fire_safety - INFO - Response: 200
+2025-05-31 16:36:01,593 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-31 16:36:01,960 - fire_safety - INFO - Response: 200
+2025-05-31 16:44:38,820 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-31 16:44:39,133 - fire_safety - INFO - Response: 200
+2025-05-31 16:44:58,939 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/register
+2025-05-31 16:44:58,940 - fire_safety - INFO - Response: 200
+2025-05-31 16:44:58,942 - fire_safety - INFO - Request: POST http://localhost:8000/register
+2025-05-31 16:44:59,328 - fire_safety - ERROR - Request failed: 1 validation errors:
+  {'type': 'missing', 'loc': ('response', 'refresh_token'), 'msg': 'Field required', 'input': {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJ0eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ4Njg2NDk5fQ.El4CBXRHZfDtJTO0JXKNedsQE2i9ajKte0iDHthgqpk', 'token_type': 'bearer'}}
+Traceback (most recent call last):
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Roma\Desktop\À–4 “Ãœ\main.py", line 350, in log_requests
+    response = await call_next(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+  File "C:\Users\Roma\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'missing', 'loc': ('response', 'refresh_token'), 'msg': 'Field required', 'input': {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJ0eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ4Njg2NDk5fQ.El4CBXRHZfDtJTO0JXKNedsQE2i9ajKte0iDHthgqpk', 'token_type': 'bearer'}}
+
+2025-05-31 16:44:59,362 - fire_safety - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'missing', 'loc': ('response', 'refresh_token'), 'msg': 'Field required', 'input': {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJ0eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ4Njg2NDk5fQ.El4CBXRHZfDtJTO0JXKNedsQE2i9ajKte0iDHthgqpk', 'token_type': 'bearer'}}
+NoneType: None
+2025-05-31 18:03:29,165 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/register
+2025-05-31 18:03:29,168 - fire_safety - INFO - Response: 200
+2025-05-31 18:03:29,171 - fire_safety - INFO - Request: POST http://localhost:8000/register
+2025-05-31 18:03:29,420 - fire_safety - ERROR - HTTPException: 400 - Email already registered
+2025-05-31 18:03:29,421 - fire_safety - INFO - Response: 400
+2025-05-31 18:03:49,330 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/users/?skip=0&limit=100
+2025-05-31 18:03:49,390 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:03,222 - fire_safety - INFO - Request: DELETE http://127.0.0.1:8000/users/6
+2025-05-31 18:04:03,483 - fire_safety - INFO - Response: 204
+2025-05-31 18:04:11,290 - fire_safety - INFO - Request: GET http://127.0.0.1:8000/users/?skip=0&limit=100
+2025-05-31 18:04:11,296 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:35,541 - fire_safety - INFO - Request: POST http://localhost:8000/register
+2025-05-31 18:04:36,010 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:40,954 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 18:04:40,956 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-05-31 18:04:40,956 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:40,958 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:40,960 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 18:04:40,962 - fire_safety - INFO - Response: 307
+2025-05-31 18:04:40,965 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 18:04:40,966 - fire_safety - INFO - Response: 307
+2025-05-31 18:04:40,968 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-05-31 18:04:40,969 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:40,972 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 18:04:40,979 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:40,983 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 18:04:40,988 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:42,165 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/7
+2025-05-31 18:04:42,167 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=7
+2025-05-31 18:04:42,168 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:42,170 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:42,171 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/7
+2025-05-31 18:04:42,172 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:42,174 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors?building_id=7
+2025-05-31 18:04:42,174 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:42,175 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 18:04:42,177 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 18:04:42,179 - fire_safety - INFO - Response: 307
+2025-05-31 18:04:42,184 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 18:04:42,185 - fire_safety - INFO - Response: 307
+2025-05-31 18:04:42,187 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/?building_id=7
+2025-05-31 18:04:42,188 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:42,190 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/?building_id=7
+2025-05-31 18:04:42,191 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:42,192 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:42,194 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 18:04:42,196 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 18:04:42,223 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:42,226 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 18:04:42,232 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:42,307 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,089 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 18:04:44,092 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/sensors/2
+2025-05-31 18:04:44,093 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 18:04:44,093 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?sensor_id=2
+2025-05-31 18:04:44,094 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,095 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,096 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,097 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,098 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 18:04:44,099 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 18:04:44,100 - fire_safety - INFO - Response: 307
+2025-05-31 18:04:44,105 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?sensor_id=2
+2025-05-31 18:04:44,107 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 18:04:44,108 - fire_safety - INFO - Response: 307
+2025-05-31 18:04:44,109 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,111 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 18:04:44,112 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 18:04:44,113 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,115 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,118 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/2
+2025-05-31 18:04:44,125 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,127 - fire_safety - INFO - Request: GET http://localhost:8000/incidents/?sensor_id=2
+2025-05-31 18:04:44,129 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,131 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 18:04:44,138 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,139 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:44,143 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 18:04:44,148 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:55,405 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-05-31 18:04:55,406 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:55,409 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-05-31 18:04:55,728 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:56,917 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 18:04:56,917 - fire_safety - INFO - Response: 307
+2025-05-31 18:04:56,920 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-05-31 18:04:56,922 - fire_safety - INFO - Response: 307
+2025-05-31 18:04:56,923 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 18:04:56,933 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:56,956 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-05-31 18:04:56,969 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:57,886 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 18:04:57,888 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 18:04:57,890 - fire_safety - INFO - Response: 307
+2025-05-31 18:04:57,893 - fire_safety - INFO - Request: GET http://localhost:8000/sensors?building_id=7
+2025-05-31 18:04:57,894 - fire_safety - INFO - Response: 307
+2025-05-31 18:04:57,897 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 18:04:57,904 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:57,907 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/7
+2025-05-31 18:04:57,914 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:57,916 - fire_safety - INFO - Response: 200
+2025-05-31 18:04:57,917 - fire_safety - INFO - Request: GET http://localhost:8000/sensors/?building_id=7
+2025-05-31 18:04:57,924 - fire_safety - INFO - Response: 200
