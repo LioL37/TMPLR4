@@ -178,3 +178,61 @@
 2025-06-04 18:19:49,255 - fire_safety - INFO - Request: GET http://testserver/sensors/1
 2025-06-04 18:19:49,259 - fire_safety - ERROR - HTTPException: 404 - Sensor not found
 2025-06-04 18:19:49,260 - fire_safety - INFO - Response: 404
+2025-06-04 14:09:27,501 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-06-04 14:09:27,534 - fire_safety - INFO - Response: 200
+2025-06-04 14:09:27,541 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-06-04 14:09:28,569 - fire_safety - INFO - Response: 200
+2025-06-04 14:09:28,667 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:09:28,673 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:09:28,674 - fire_safety - INFO - Response: 200
+2025-06-04 14:09:28,676 - fire_safety - INFO - Response: 200
+2025-06-04 14:09:28,679 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:09:28,729 - fire_safety - INFO - Response: 200
+2025-06-04 14:09:28,733 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:09:28,739 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:11,186 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/token
+2025-06-04 14:14:11,187 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:11,192 - fire_safety - INFO - Request: POST http://localhost:8000/token
+2025-06-04 14:14:11,586 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:11,667 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:11,669 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:11,670 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:11,671 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:11,674 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:11,680 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:11,691 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:11,696 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:22,178 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-06-04 14:14:22,180 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:22,181 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings
+2025-06-04 14:14:22,183 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:22,190 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-06-04 14:14:22,192 - fire_safety - INFO - Response: 307
+2025-06-04 14:14:22,195 - fire_safety - INFO - Request: GET http://localhost:8000/buildings
+2025-06-04 14:14:22,196 - fire_safety - INFO - Response: 307
+2025-06-04 14:14:22,200 - fire_safety - INFO - Request: OPTIONS http://localhost:8000/buildings/
+2025-06-04 14:14:22,202 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:22,208 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-06-04 14:14:22,304 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:22,310 - fire_safety - INFO - Request: GET http://localhost:8000/buildings/
+2025-06-04 14:14:22,316 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:24,141 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:24,147 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:24,154 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:24,159 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:25,826 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:25,832 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:25,852 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:25,858 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:26,575 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:26,581 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:26,586 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:26,593 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:26,907 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:26,913 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:26,918 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:26,925 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:27,507 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:27,513 - fire_safety - INFO - Response: 200
+2025-06-04 14:14:27,518 - fire_safety - INFO - Request: GET http://localhost:8000/incidents?limit=5&resolved=false
+2025-06-04 14:14:27,525 - fire_safety - INFO - Response: 200

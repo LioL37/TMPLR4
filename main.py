@@ -280,16 +280,16 @@ def refresh_access_token(
     db: Session = Depends(get_db)
 ):
     try:
-        email = auth.verify_token(refresh_token, "refresh")
-        user = crud.get_user_by_email(db, email=email)
+        user_id = auth.verify_token(refresh_token, "refresh")
+        user = crud.get_user(db, user_id=user_id)
         if user is None:
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail="User not found"
             )
         
-        access_token = auth.create_access_token(data={"sub": user.email})
-        new_refresh_token = auth.create_refresh_token(data={"sub": user.email})
+        access_token = auth.create_access_token(user.id)
+        new_refresh_token = auth.create_refresh_token(user.id)
         
         return {
             "access_token": access_token,
@@ -309,18 +309,21 @@ def validate_token(
     token: str = Body(..., embed=True),
     db: Session = Depends(get_db)
 ):
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Invalid token",
-    )
-    
     try:
-        email = auth.verify_token(token, credentials_exception)
-        user = crud.get_user_by_email(db, email=email)
+        user_id = auth.verify_token(token, expected_type="access")
+        user = crud.get_user(db, user_id=user_id)
         if user is None:
-            raise credentials_exception
+            raise HTTPException(status_code=401, detail="User not found")
         
-        return {"valid": True, "user": {"email": email, "id": user.id}}
+        return {
+            "valid": True,
+            "user": {
+                "id": user.id,
+                "email": user.email
+            }
+        }
+    except HTTPException:
+        raise
     except JWTError:
         return {"valid": False}
 

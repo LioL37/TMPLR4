@@ -1,0 +1,34 @@
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(40) NOT NULL UNIQUE,
+    email VARCHAR(60) NOT NULL UNIQUE,
+    password_hash TEXT NOT NULL,
+    is_admin BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE buildings (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(60) NOT NULL,
+    address VARCHAR(60) NOT NULL,
+    owner_id INT NOT NULL REFERENCES users(id),
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE sensors (
+    id SERIAL PRIMARY KEY,
+    building_id INT REFERENCES buildings(id),
+    type VARCHAR(15) NOT NULL,
+    location VARCHAR(60) NOT NULL,
+    installed_at DATE DEFAULT CURRENT_DATE,
+    is_active BOOLEAN DEFAULT TRUE
+);
+
+CREATE TABLE incidents (
+    id SERIAL PRIMARY KEY,
+    sensor_id INT REFERENCES sensors(id),
+    detected_at TIMESTAMP DEFAULT NOW(),
+    level VARCHAR(10),
+    description TEXT,
+    resolved BOOLEAN DEFAULT FALSE
+);

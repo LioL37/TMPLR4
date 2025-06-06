@@ -108,3 +108,21 @@ def check_owner_or_admin(
     if user.id != resource_owner_id and not user.is_admin:
         raise HTTPException(status_code=403, detail="Forbidden")
     return True
+
+def verify_token(token: str, expected_type: str) -> int:
+    """
+    Проверяет токен и возвращает user_id, если токен валиден и нужного типа.
+    """
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        if payload.get("type") != expected_type:
+            raise HTTPException(status_code=401, detail="Invalid token type")
+        user_id = payload.get("user_id")
+        if user_id is None:
+            raise HTTPException(status_code=401, detail="Invalid token payload")
+        return int(user_id)
+    except jwt.ExpiredSignatureError:
+        raise HTTPException(status_code=401, detail="Token expired")
+    except JWTError as e:
+        logger.error(f"JWT error: {str(e)}")
+        raise HTTPException(status_code=401, detail="Invalid token")
